@@ -1,5 +1,5 @@
 public class SpeedConvertar {
-    public static  long tomilePerHour(double kilometersPerHour){
+    public static  long toMilePerHour(double kilometersPerHour){
         if(kilometersPerHour < 0){
             return  -1;
         }
@@ -11,7 +11,7 @@ public class SpeedConvertar {
         }
             else{
 
-                double YY = tomilePerHour(kilometersPerHour);
+                double YY = toMilePerHour(kilometersPerHour);
                 System.out.println(kilometersPerHour + " km/h = " + YY + " mi/h");
             }
         }
