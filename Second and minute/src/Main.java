@@ -18,7 +18,15 @@ public class Main {
 
        int hour = minutes /60;
        int remaingmin = minutes % 60;
-        String s = hour + "h " + remaingmin + "m " + seconds + "s";
+       String hours = hour + "h ";
+       String minute = remaingmin + "m ";
+       String second = seconds + "s ";
+
+       if(hour < 10) hours = "0" + hours;
+       if(remaingmin < 10) minute = "0" + minute;
+       if(seconds < 10) second = "0" + seconds;
+
+        String s = hours + minute + second;
         return s;
     }
     public static String getDurationString(int second){
