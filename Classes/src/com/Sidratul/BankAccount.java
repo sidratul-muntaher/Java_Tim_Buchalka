@@ -1,10 +1,21 @@
 package  com.Sidratul;
+
+import java.lang.ref.SoftReference;
+
 public class BankAccount {
     private int accountNumber;
     private double balance;
     private String name;
     private String email;
-    private int phone;
+    private String phone;
+
+    public BankAccount( int accountNumber, double balance, String name, String email, String phone){
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
 
     public void setAccountNumber(int accountNumber){
         this.accountNumber = accountNumber;
@@ -18,7 +29,7 @@ public class BankAccount {
     public void setEmail(String email){
         this.email = email;
     }
-    public void setPhone(int phone){
+    public void setPhone(String phone){
         this.phone = phone;
     }
 
@@ -34,7 +45,7 @@ public class BankAccount {
     public String getEmail(){
         return this.email;
     }
-    public int getPhone(){
+    public String getPhone(){
         return this.phone;
     }
 
